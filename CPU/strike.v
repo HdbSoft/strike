@@ -6,12 +6,24 @@
 // strike.v - Main file
 //-----------------------------------
 
-module strike_CPU();
+`default_nettype none
+`include "ALU.vh"
 
-initial begin
-	$display ("Hello, world!");
-	$finish;
-end
+
+module strike_CPU(
+	input wire clock,
+	input wire reset,
+	output wire [3:0] leds,
+	output wire stop
+);
+
+parameter ROM_FILE = "boot.o";
+
+localparam AW = 6;     //-- Directions bus width
+localparam DW = 8;     //-- Data bus width
+
+//-- Strike instructions set
+`include "ISA.vh"
 
 
 endmodule
