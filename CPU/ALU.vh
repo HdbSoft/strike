@@ -1,6 +1,6 @@
 //-----------------------------------
 // The strike project, open source
-// 4-bit processor written in
+// 6-bit processor written in
 // Verilog and Cython
 //
 // ALU.vh - Arithmetic-logic unit

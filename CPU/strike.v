@@ -93,4 +93,8 @@ assign leds = leds_r;
 assign stop = reg_stop;
 
 
+//-- Strike control unit
+`include "CU.vh"
+
+
 endmodule
